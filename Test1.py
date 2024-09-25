@@ -3,4 +3,4 @@ print("import gelukt")
 #code vanuit pycharm
 print("Deze code komt van pycharm")
 #verdere aanpassing
-print("tweede test")
+print("tweede test 5")
