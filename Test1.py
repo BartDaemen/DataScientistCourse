@@ -4,3 +4,5 @@ print("import gelukt")
 print("Deze code komt van pycharm")
 #verdere aanpassing
 print("tweede test 5")
+#tweede keer vanuit Github
+print("test SFSDQfjkmslqdfj")
