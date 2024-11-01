@@ -24,5 +24,36 @@ print(len(thistuple))
 thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
 print(thistuple)
 
+# Access Tuple Items
+  # You can access tuple items by referring to the index number, inside square brackets:
 
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1]) #
+Note: The first item has index 0.
 
+# Check if Item Exists
+
+thistuple = ("apple", "banana", "cherry")
+if "apple" in thistuple:
+  print("Yes, 'apple' is in the fruits tuple") 
+
+# Change tuple values
+
+  # Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+  # But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x) 
+
+# Loop through a tuple
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x) 
+
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i]) 
