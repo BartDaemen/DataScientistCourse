@@ -1,0 +1,107 @@
+""""Maak een 2 lijst student(id,voornaam,achternaam,geslacht,woonplaats)
+Maak op voorhand 5 dummy studenten aan.
+CRUD functies
+Toon alle studenten
+Zoek student op id
+Voeg een student toe
+Verwijder een student op id
+Toon alle m/v
+Toon alle studenten van woonplaats x
+Toon alle studenten met geslacht x van woonplaats y
+Functies worden aangesproken vanuit een hoofdprogramma"""
+
+headers = ["id","voornaam","achternaam","geslacht","woonplaats"]
+dummy=[
+    ["1","voornaam1","achternaam1","man","Hasselt"],
+    ["2","voornaam2","achternaam2","vrouw","Genk"],
+    ["3","voornaam3","achternaam3","man","Hasselt"],
+    ["4","voornaam4","achternaam4","vrouw","Hasselt"],
+    ["5","voornaam5","achternaam5","man","Genk"]
+]
+
+def toon_studenten(data):
+    for rij in data:
+        for item in rij:
+            print(item, end="\t")
+        print()
+
+def vind_student(data):
+    id = input("Geef id van student in")
+    for rij in dummy:
+        if rij[0] == id:
+            info = f"ID: {rij[0]}\nVoornaam: {rij[1]}\nAchternaam: {rij[2]}\nGeslacht: {rij[3]}\nWoonplaats: {rij[4]}"
+            print(info)
+        else:
+            return "Gebruikers-ID bestaan niet"
+
+def toevoegen_student(data):
+    info_id = input("Geef id")
+    info_voornaam = input("Geef voornaam")
+    info_naam = input("Geef naam")
+    info_geslacht = input("Geef geslacht")
+    info_woonplaats = input ("Geef woonplaats")
+    info=[]
+    info.append(info_id)
+    info.append(info_voornaam)
+    info.append(info_naam)
+    info.append(info_geslacht)
+    info.append(info_woonplaats)
+    data.append(info)
+
+def verwijder_student(data):
+    id = input("Geef id van student in om te verwijderen")
+    for rij in dummy:
+        if rij[0] == id:
+            del rij[0]
+        else:
+            return "Gebruikers-ID bestaan niet"
+
+def filter_geslacht(data):
+    geslacht_filter = input("Geef geslacht op: man of vrouw")
+    geslacht_resultaat=[]
+    for rij in data:
+        if rij[3]== geslacht_filter:
+            geslacht_resultaat.append(rij)
+    print (geslacht_resultaat)
+
+def filter_woonplaats(data):
+    woonplaats_filter = input("Geef woonplaats op")
+    woonplaats_resultaat=[]
+    for rij in data:
+        if rij[4]== woonplaats_filter:
+            woonplaats_resultaat.append(rij)
+    print (woonplaats_resultaat)
+
+#toevoegen_student(dummy)
+#toon_studenten(dummy)
+#verwijder_student(dummy)
+#toon_studenten(dummy)
+#filter_geslacht(dummy)
+#filter_woonplaats(dummy)
+#vind_student(dummy)
+
+def hoofdprogramma():
+    print("1 | Toon studenten\n"
+                  "2 | Vind student\n"
+                  "3 | Verwijder student\n"
+                  "4 | Voeg student toe \n"
+                  "5 | Filter op geslacht \n"
+                  "6 | Filter op woonplaats\n")
+
+    keuze = input("Geef aan wat je wil doen:")
+    if keuze == "1":
+        toon_studenten(dummy)
+    elif keuze == "2":
+        vind_student(dummy)
+    elif keuze == "3":
+        verwijder_student(dummy)
+    elif keuze == "4":
+        verwijder_student(dummy)
+    elif keuze == "5":
+        filter_geslacht(dummy)
+    elif keuze == "6":
+        filter_woonplaats(dummy)
+    else:
+        print("ongeldige keuze")
+hoofdprogramma()
+
