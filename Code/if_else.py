@@ -68,3 +68,28 @@ elif gem <8:
 elif gem >= 8 :
    print("onderscheiding")
 else: print("fout")
+
+#schrijf een programma dat zegt een getal deelbaar is door 2, 3, 5, 7, 10
+
+getal = int(input("geef een getal in"))
+deelbaar = []
+print(getal)
+if getal%2 == 0:
+    deelbaar.append(2)
+if getal%5 == 0:
+    deelbaar.append(5)
+if getal%7 == 0:
+    deelbaar.append(7)
+if getal%10 == 0:
+    deelbaar.append(10)
+
+print(f"het getal {getal} is deelbaar door {deelbaar}")
+
+# door welke getallen is een getal deelbaar?
+def deelbaar(getal):
+    delers = [2,3,5,7,10,100]
+    for i in delers:
+        if getal%i ==0:
+            print(f"getals is deelbaar door {i}")
+
+deelbaar(700)
