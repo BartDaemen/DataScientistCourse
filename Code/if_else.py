@@ -93,3 +93,30 @@ def deelbaar(getal):
             print(f"getals is deelbaar door {i}")
 
 deelbaar(700)
+
+
+"""Schrijf een functie dat 100 willekeurige getallen genereerd van 10 tot 200.
+Gegenereerd Getal 1,5,9,13 … komen in lijst_1
+Gegenereerd Getal 2,6,10,14 … komen in lijst_2
+Gegenereerd Getal 3,7,11,15 … komen in lijst_3
+Gegenereerd Getal 4,8,12,16 … komen in lijst_4
+"""
+
+import random
+
+lijst = [["lijst_1:"],["lijst_2:"],["lijst_3:"],["lijst_4:"]]
+for i in range(0,100):
+    x = random.randint(10,200)
+    if x%4==1:
+        lijst[0].append(x)
+    elif x%4==2:
+        lijst[1].append(x)
+    elif x%4==3:
+        lijst[2].append(x)
+    elif x%4==0:
+        lijst[3].append(x)
+
+for rij in lijst:
+    for _ in rij:
+        print(_, end="\t")
+    print("")
