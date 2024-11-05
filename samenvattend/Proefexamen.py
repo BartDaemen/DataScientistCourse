@@ -186,7 +186,7 @@ def sorteer_op_kenmerk():
 
     gesorteerde_data = sorted(data, key=lambda x: x[kenmerk_index]) # voeg ", reverse=True terug op aflopend te sorteren
 
-    print("\nGesorteerde lijst op {sorteer_kenmerk}):")
+    print("\nGesorteerde lijst op {sorteer_kenmerk}:")
     print(tabulate(gesorteerde_data, headers=headers, tablefmt='grid'))
     return gesorteerde_data
 
