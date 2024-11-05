@@ -152,7 +152,7 @@ def pas_item_aan():
             index_aan_te_passen = i
             break
 
-    if index_aan_te_aanpassen is not None:
+    if index_aan_te_passen is not None:
         item_aan_te_passen = input(f"Welke element wil je aanpassen? ({', '.join(headers)}): ")
 
         if item_aan_te_passen not in headers:
