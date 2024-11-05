@@ -24,6 +24,15 @@ elif keuze.upper() == "BENZINE":
 else:
     print("ongeldige keuze")
 
+### deelbaar geoptimaliseerd 
+getal = int(input("geef een getal in\n"))
+deelbaar = []
+
+for x in range(1,getal+1):
+    if getal%x == 0:
+        deelbaar.append(x)
+print(f"{getal} is deelbaar door {deelbaar}")
+
 """Schrijf een programma dat bepaald of een woord lang of kort is
 Minder dan 4 letters: heel kort
 Tussen 4 en 6 letters: kort
