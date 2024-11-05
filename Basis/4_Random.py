@@ -16,4 +16,7 @@ print(random.choice(mylist))
 # Return random number between 0.0 and 1.0:
 
 import random
-print(random.random()) 
+print(random.random()) #float number between 0 and 1 
+
+import random
+print(random.uniform(20,60))
