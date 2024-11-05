@@ -1,11 +1,11 @@
 import random
 
-print(random.randrange(1, 10)) 
+print(random.randrange(1, 10))  # 10 niet inbegrepen
 
 # randint Return a number between 3 and 9 (both included):
 
 import random
-print(random.randint(3, 9)) 
+print(random.randint(3, 9)) # 3 en 9 inclusief
 
 # Return a random element from a list:
 
