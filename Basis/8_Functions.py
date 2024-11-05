@@ -19,7 +19,7 @@ my_function()
 # Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
 
 def my_function(fname):
-  print(fname + " Refsnes")
+  print(fname + " Smeets")
 
 my_function("Emil")
 my_function("Tobias")
