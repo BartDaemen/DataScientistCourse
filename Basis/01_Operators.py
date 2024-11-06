@@ -32,6 +32,7 @@
 # Boolean Values
 
 	# Booleansrepresent one of two values: True or False.
+	# Let op hoofdletter!
 
 a = 200
 b = 33
