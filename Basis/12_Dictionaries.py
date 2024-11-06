@@ -149,6 +149,7 @@ myfamily = {
     "name" : "Linus",
     "year" : 2011
   }
+}
 
   # access items in nested dict
 
