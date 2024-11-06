@@ -2,12 +2,12 @@
 # Variables can store data of different types, and different types can do different things.
 
 # Python has the following data types built-in by default, in these categories:
-  # Text Type: 	str
-  # Numeric Types: 	int, float
+  # Text Type: 	      str
+  # Numeric Types: 	  int, float
   # Sequence Types: 	list, tuple, range
-  # Set Types: 	set
-  # Boolean Type: 	bool
-  # None Type: 	NoneType
+  # Set Types: 	      set
+  # Boolean Type: 	  bool
+  # None Type: 	      NoneType
 
 # getting the data type
 
