@@ -16,12 +16,12 @@ print(type(x))
 
 # setting the data type
 
-  # x = "Hello World" 	  str 	
-  # x = 20 	              int 	
-  # x = 20.5             	float 	
+  # x = "Hello World" 	                str 	
+  # x = 20 	                            int 	
+  # x = 20.5                           	float 	
   # x = ["apple", "banana", "cherry"] 	list 	
   # x = ("apple", "banana", "cherry") 	tuple 	
-  # x = range(6) 	range 	
+  # x = range(6) 	                      range 	
   # x = {"name" : "John", "age" : 36} 	dict 	
   # x = {"apple", "banana", "cherry"} 	set 	
   # x = True 	bool 	
@@ -88,7 +88,7 @@ if "free" in txt:
 
 txt = "The best things in life are free!"
 if "free" not in txt:
-  print("Yes, 'free' is present.")
+  print("Yes, 'free' is not present.")
 
 # string slicing
 
